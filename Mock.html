@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <title>RideShare</title>
+    <link href="Mock_files/bootstrap.css" rel="stylesheet">
+    <link href="Mock_files/product.css" rel="stylesheet">
+    <style>
+    .parallax {
+        /* The image used */
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/99/UC_Irvine%2C_Langson_Library.JPG");
+        min-height: 200px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/geofire/4.1.2/geofire.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr3C6CvIti_t4U16oI7rSAzzVtgJaWus4&libraries=places"></script>
+    <script src="home.js"></script>
+    <style>
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #inputs {
+            position: absolute;
+            top: 13%;
+            left: 4%;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <div>
+                <a class="py-2 d-none d-md-inline-block" href="#">Home</a>
+                <a class="py-2 px-5 d-none d-md-inline-block" href="#">Support</a>
+            </div>
+
+            <div>
+                <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-1/p48x48/14368641_1259519964080175_1346822977955266755_n.jpg?oh=5b5ff1b3019f88930a2b818e2d27d108&oe=5AE94A73" class="rounded-circle" width="25" height="25">
+                <div class="px-1 btn-group dropright">
+                    <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Profile
+                    </button>
+                    <div class="dropdown-menu">
+                        <button class="dropdown-item" type="button">Settings</button>
+                        <button class="dropdown-item" type="button">Privacy</button>
+                        <div class="dropdown-divider"></div>
+                        <button class="dropdown-item" type="button">Log Out</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div id="map"></div>
+    <div id="inputs">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">From</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Start" id="autocomplete1">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">To</span>
+            </div>
+            <input type="text" id="autocomplete2"/>
+            <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary" type="button" id="search">Go!</button>
+            </div>
+        </div>
+    </div>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="Mock_files/popper.js"></script>
+    <script src="Mock_files/bootstrap.js"></script>
+    <script src="Mock_files/holder.js"></script>
+    <script>
+    Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+    });
+    </script>
+
+
+</body></html>

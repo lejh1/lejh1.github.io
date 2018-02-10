@@ -11,97 +11,100 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <!--========================CHANGE HERE/ ADD PIC==============-->
-    <img src="Headshot.jpg" style="width:45%;" class="w3-round"><br><br>
-    <h4><b>PROJECT PORTFOLIO</b></h4>
-    <p class="w3-text-grey">Template by W3.CSS</p>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
-  </div>
-  <div class="w3-panel w3-large">
-    <i><a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/justin-le-20953714b/"></a></i>
-    <i><a class="fa fa-github w3-hover-opacity" href="https://github.com/lejh1"></a></i>
-  </div>
-</nav>
+	<!-- Sidebar/menu -->
+	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+		<div class="w3-container">
+			<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+				<i class="fa fa-remove"></i>
+			</a>
+			<!--========================CHANGE HERE/ ADD PIC==============-->
+			<img src="Headshot.jpg" style="width:45%;" class="w3-round"><br><br>
+			<h4><b>PROJECT PORTFOLIO</b></h4>
+		</div>
+		<div class="w3-bar-block">
+			<a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+			<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+		</div>
+		<div class="w3-panel w3-large">
+			<i><a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/justin-le-20953714b/"></a></i>
+			<i><a class="fa fa-github w3-hover-opacity" href="https://github.com/lejh1"></a></i>
+		</div>
+	</nav>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+	<!-- Overlay effect when opening sidebar on small screens -->
+	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
+	<!-- !PAGE CONTENT! -->
+	<div class="w3-main" style="margin-left:300px">
 
-  <!-- Header -->
-  <header id="portfolio">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
-    <h1><b>Welcome to My Project Portfolio</b></h1>
-    <p>This website is just to visually showcase some of the projects I have made and are proud of. I am currently attemping to increase my portfolio with more fun side projects. Thank you for taking the time to check out my portfolio!</p>
-    </div>
-  </header>
-  
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="Scout_Car1.png" alt="Norway" style="width:100%" class="w3-hover-opacity" onclick="">
-      <div class="w3-container w3-white">
-        <p><b>Scout Car - Project Arduino</b></p>
-        <p>This project was a ...</p>
-      </div>
-    </div>
-<!-- ADD SLIDESHOW OF PICS-->
-      <!-- Micromouse-->
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-          <!-- Zotclicker?-->
-    <div class="w3-third w3-container">
-      <img src="/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <img src="/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-  </div>
+		<!-- Header -->
+		<header id="portfolio">
+			<a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+			<span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+			<div class="w3-container">
+				<h1><b>Welcome to My Project Portfolio</b></h1>
+				<p>This website is just to visually showcase some of the projects I have made and are proud of. I am currently attemping to increase my portfolio with more fun side projects. Thank you for taking the time to check out my portfolio!</p>
+			</div>
+		</header>
 
-  <!-- Pagination **Not needed atm**-->
+		<!-- First Photo Grid-->
+		<div class="w3-row-padding">
+			<div class="w3-third w3-container w3-margin-bottom">
+				<img src="Scout_Car1.png" alt="Scout_Car" style="width:100%" class="MySlides" onclick="">
+<!-- 				<img src="Scout_Car1.png" alt="Scout_Car" style="width:100%" class="MySlides" onclick="">
+				<img src="Scout_Car1.png" alt="Scout_Car" style="width:100%" class="MySlides" onclick=""> -->
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+				<div class="w3-container w3-white">
+					<p><b>Scout Car - Project Arduino</b></p>
+					<p>This project was a ...</p>
+				</div>
+			</div>
+			<!-- ADD SLIDESHOW OF PICS-->
+			<!-- Micromouse-->
+			<div class="w3-third w3-container w3-margin-bottom">
+				<img src="/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+				<div class="w3-container w3-white">
+					<p><b>Lorem Ipsum</b></p>
+					<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+				</div>
+			</div>
+			<!-- Zotclicker?-->
+			<div class="w3-third w3-container">
+				<img src="/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+				<div class="w3-container w3-white">
+					<p><b>Lorem Ipsum</b></p>
+					<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Second Photo Grid-->
+		<div class="w3-row-padding">
+			<div class="w3-third w3-container w3-margin-bottom">
+				<img src="/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+				<div class="w3-container w3-white">
+					<p><b>Lorem Ipsum</b></p>
+					<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+				</div>
+			</div>
+			<div class="w3-third w3-container w3-margin-bottom">
+				<img src="/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+				<div class="w3-container w3-white">
+					<p><b>Lorem Ipsum</b></p>
+					<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+				</div>
+			</div>
+			<div class="w3-third w3-container">
+				<img src="/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+				<div class="w3-container w3-white">
+					<p><b>Lorem Ipsum</b></p>
+					<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Pagination **Not needed atm**-->
 
 <!--   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
@@ -112,47 +115,68 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
       <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
     </div>
-  </div> -->
+</div> -->
 
-  <!-- Images of Me -->
-  <div class="w3-row-padding w3-padding-16" id="about">
-    <div class="w3-col m6">
-      <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
-    </div>
-    <div class="w3-col m6">
-      <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
-    </div>
-  </div>
-
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <h4><b>About Me</b></h4>
-    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-    <hr>
-    
-    <h4>Resume</h4>
-    <!-- ============================ADD RESUME PHOTO AND DL LINK -->
-    <p>
-      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-        <i class="fa fa-download w3-margin-right"></i>Download Resume
-      </button>
-    </p>
-    <hr>
-  
-<!-- End page content -->
+<!-- Images of Me -->
+<div class="w3-row-padding w3-padding-16" id="about">
+	<div class="w3-col m6">
+		<img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+	</div>
+	<div class="w3-col m6">
+		<img src="/w3images/me2.jpg" alt="Me" style="width:100%">
+	</div>
 </div>
 
+<div class="w3-container w3-padding-large" style="margin-bottom:32px">
+	<h4><b>About Me</b></h4>
+	<p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+	<hr>
+
+	<h4>Resume</h4>
+	<!-- ============================ADD RESUME PHOTO AND DL LINK -->
+	<p>
+		<button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+			<i class="fa fa-download w3-margin-right"></i>Download Resume
+		</button>
+	</p>
+	<hr>
+
+	<!-- End page content -->
+</div>
+<footer>
+	<p class="w3-text-grey">Template by W3.CSS</p>
+
+</footer>
 <script>
 // Script to open and close sidebar
 function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
+	document.getElementById("mySidebar").style.display = "block";
+	document.getElementById("myOverlay").style.display = "block";
 }
- 
+
 function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
+	document.getElementById("mySidebar").style.display = "none";
+	document.getElementById("myOverlay").style.display = "none";
 }
 </script>
+<script type="text/javascript">
+	var slideIndex = 1;
+	showDivs(slideIndex);
 
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		if (n > x.length) {slideIndex = 1} 
+			if (n < 1) {slideIndex = x.length} ;
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none"; 
+		}
+		x[slideIndex-1].style.display = "block"; 
+	}
+</script>
 </body>
 </html>

@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html>
-<title>Justin Le's Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-	body,
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		font-family: "Raleway", sans-serif
-	}
-</style>
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115149690-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-115149690-1');
+	</script>
+
+	<title>Justin Le's Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		body,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: "Raleway", sans-serif
+		}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../lib/w3.css">
+	<style>
+		.mySlides {
+			display: none
+		}
+	</style>
+</head>
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
@@ -30,7 +53,7 @@
 			<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
 				<i class="fa fa-remove"></i>
 			</a>
-			<img src="images/Headshot.jpg" style="width:45%;" class="w3-round w3-border" >
+			<img src="images/Headshot.jpg" style="width:45%;" class="w3-round w3-border">
 			<br>
 			<br>
 			<h4>
@@ -45,19 +68,19 @@
 			<a href="#Resume" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
 				<i class="fa fa-file-o fa-fw w3-margin-right"></i>RESUME</a>
 		</div>
-		<div class="w3-panel w3-large">Links: 
+		<div class="w3-panel w3-large">Links:
 			<i>
-				<a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/justin-le-20953714b/"></a>
+				<a class="fa fa-linkedin w3-hover-opacity w3-blue-gray" href="https://www.linkedin.com/in/justin-le-20953714b/"></a>
 			</i>
 			<i>
-				<a class="fa fa-github w3-hover-opacity" href="https://github.com/lejh1"></a>
+				<a class="fa fa-github w3-hover-opacity w3-blue-gray" href="https://github.com/lejh1"></a>
 			</i>
 		</div>
 	</nav>
 
 	<!-- Overlay effect when opening sidebar on small screens -->
 	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-	 id="myOverlay"></div>
+	    id="myOverlay"></div>
 
 	<!-- !PAGE CONTENT! -->
 	<div class="w3-main" style="margin-left:300px">
@@ -74,32 +97,46 @@
 				<h1>
 					<b>Welcome to Justin Le's Project Portfolio</b>
 				</h1>
-				</div>
-				<div class="w3-container">
+			</div>
+			<div class="w3-container">
 				<p>This website is just to visually showcase some of the projects I have made and are proud of. I am currently attemping
-					to increase my portfolio with more fun side projects. Thank you for taking the time to check out my portfolio! NOTE: This webpage is still being updated/created in my free time so there is still a lot to add while I learn more about html/css/javascript.</p>
+					to increase my portfolio with more fun side projects. Thank you for taking the time to check out my portfolio! NOTE:
+					This webpage is still being updated/created in my free time so there is still a lot to add while I learn more about
+					html/css/javascript.
+				</p>
 			</div>
 		</header>
 
 		<!-- First Photo Grid-->
 		<div class="w3-row-padding">
-			<div class="w3-third w3-container w3-margin-bottom">
-				<img src="images/Scout_Car1.png" alt="Scout_Car" height ="300" style="width:100%" class="MySlides" onclick="">
+			<div class="w3-third w3-display-container w3-margin-bottom">
+
+				<img src="images/Scout_Car1.png" alt="Scout_Car" height="300" style="width:100%;cursor:zoom-in" class="w3-hover-opacity w3-border"
+				    onclick="document.getElementById('modal01').style.display='block'">
+				<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+						<img src="images/Scout_Car1.png" style="width:100%">
+					</div>
+				</div>
 
 				<div class="w3-container w3-white">
 					<p>
-						<b>Scout Car - Project Arduino</b>
+						<h3>
+							<b>Scout Car - Project Arduino</b>
+						</h3>
 					</p>
-					<p>This project was a something I made with a team of 4 for the Thales Project Arduino competition!
-						 This was my first experience with a project outside of the classroom so it was extremely fun and I learned alot from it.
-						 It is a simple IOT RC car that can be driven using keyboard input via Bluetooth and also has a makeshit "camera" on a pan/tilt servo that moves...
-					
+					<p>This project was a something I made with a team of 4 for the Thales Project Arduino competition! This was my first experience
+						with a project outside of the classroom so it was extremely fun and I learned alot from it. It is a simple IOT RC car
+						that can be driven using keyboard input via Bluetooth and also has a makeshit "camera" on a pan/tilt servo that moves...
+
 					</p>
 					<a data-toggle="collapse" href="#collapse2">Read more</a>
 					<div id="collapse2" class="panel-collapse collapse">
-						<div class="panel-body">...corresponding to your gaze data.
-							Gaze data is picked up from a Tobi EyeX camera that uses machine vision to track eye movement. My contribution to the team was the hardware/firmware aspect of the project.
-						 I created what is now our final circuit design as well as picked out most of the hardware modules. I also worked with coding the firmware, in this case a Arduino Uno R3.</p>
+						<div class="panel-body">...corresponding to your gaze data. Gaze data is picked up from a Tobi EyeX camera that uses machine vision to track
+							eye movement. My contribution to the team was the hardware/firmware aspect of the project. I created what is now our
+							final circuit design as well as picked out most of the hardware modules. I also worked with coding the firmware, in
+							this case a Arduino Uno R3.</p>
 						</div>
 					</div>
 				</div>
@@ -107,24 +144,57 @@
 			<!-- ADD SLIDESHOW OF PICS-->
 			<!-- Micromouse-->
 			<div class="w3-third w3-container w3-margin-bottom">
-				<img src="images/Micromouse.jpg" height="300" alt="Micromouse" style="width:100%"
-				 class="w3-hover-opacity">
+					<div class="w3-content" style="max-width:800px">
+							<img src="images/MM2.jpg" height="300" alt="Micromouse" style="width:100%;cursor:zoom-in" class="mySlides w3-hover-opacity w3-border"
+							onclick="document.getElementById('modal02').style.display='block'">	
+							<img src="images/MM3.jpg" height="300" alt="Micromouse" style="width:100%;cursor:zoom-in" class="mySlides w3-hover-opacity w3-border"
+							onclick="document.getElementById('modal03').style.display='block'">	
+							<img src="images/Micromouse.jpg" height="300" alt="Micromouse" style="width:100%;cursor:zoom-in" class="mySlides w3-hover-opacity w3-border"
+							onclick="document.getElementById('modal04').style.display='block'">		
+						  </div>
+				<div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+						<img src="images/MM2.jpg" style="width:100%">
+					</div>
+				</div>
+				<div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+						<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+						<div class="w3-modal-content w3-animate-zoom">
+							<img src="images/MM3.jpg" style="width:100%">
+						</div>
+					</div>
+					<div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+							<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+							<div class="w3-modal-content w3-animate-zoom">
+								<img src="images/Micromouse.jpg" style="width:100%">
+							</div>
+						</div>
+				<div class="w3-center">
+					<button class="w3-btn demo" onclick="currentDiv(1)">1</button>
+					<button class="w3-btn demo" onclick="currentDiv(2)">2</button>
+					<button class="w3-btn demo" onclick="currentDiv(3)">3</button>
+				</div>
 				<div class="w3-container w3-white">
 					<p>
-						<b>Micromouse</b>
+						<h3>
+							<b>Micromouse</b>
+						</h3>
 					</p>
-					<p>Above picture shows the current work in progress for my Micromouse. I am testing/setting up my 
-						motor driver logic with the teensy32.
+					<p>Above pictures shows the current work in progress for my Micromouse which is a small AI robotic mouse that autonomously
+						solves a 16x16 maze. Right now I am finshing up some of the hardware design for my mouse. After everything I want is
+						assembled, I will start to work on the software aspect.
 					</p>
 				</div>
 			</div>
 			<!-- Zotclicker?-->
 			<div class="w3-third w3-container">
-				<img src="images/ZotClicker.PNG" alt="ZotClicker" height ="300" style="width:100%"
-				 class="w3-hover-opacity">
+				<img src="images/ZotClicker.PNG" alt="ZotClicker" height="300" style="width:100%" class="w3-border">
 				<div class="w3-container w3-white">
 					<p>
-						<b>ZotClicker</b>
+						<h3>
+							<b>ZotClicker</b>
+						</h3>
 					</p>
 					<p>This small coding project is a "Cookie Clicker" style UCI inspired game, done for HackUCI 2018. "A hackathon is a place
 						where the only thing limiting what you build is your own creativity - we'll provide the rest. Stay up for 36 hours
@@ -140,25 +210,29 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- Second Photo Grid-->
 		<div class="w3-row-padding">
 			<div class="w3-third w3-container w3-margin-bottom">
 				<img src="http://www.edaway.com/wp-content/uploads/2012/04/logo_work_in_progress2.jpg" alt="Projector Buddy" style="width:100%"
-				 class="w3-hover-opacity">
+				    class="w3-border">
 				<div class="w3-container w3-white">
 					<p>
-						<b>Projector Buddy</b>
+						<h3>
+							<b>Projector Buddy</b>
+						</h3>
 					</p>
 					<p>Currently a project I am doing for my research that is unfinished... stay tuned for updates on it!</p>
 				</div>
 			</div>
 			<div class="w3-third w3-container w3-margin-bottom">
 				<img src="http://www.edaway.com/wp-content/uploads/2012/04/logo_work_in_progress2.jpg" alt="Coffee Buddy" style="width:100%"
-				 class="w3-hover-opacity">
+				    class="w3-border">
 				<div class="w3-container w3-white">
 					<p>
-						<b>Coffee Buddy</b>
+						<h3>
+							<b>Coffee Buddy</b>
+						</h3>
 					</p>
 					<p>Currently a project I am doing for my research that is unfinished... stay tuned for updates on it!</p>
 				</div>
@@ -203,10 +277,18 @@
 			<h4>
 				<b>About Me</b>
 			</h4>
-			<p>My name is Justin Le, I am a 3rd Year Computer Engineering student at University of California.</p>
+			<p>My name is Justin Le, I am a 3rd Year Computer Engineering student at University of California. I am always striving to
+				become a better person, whether it be acdemically or in my own personal development. When I am not doing school work
+				or working on a project I like to relax with videogames, working out, hanging out with friends, cooking and/or reading
+				fantasy books. My favorite videogame is "Stardew Valley" and the book I am currently reading is "The Way of Kings" by
+				Brandon Sanderson! </p>
 			<hr>
-			<div id = "Resume"><h4><b>Resume</b></h4></div>
-			<object width = "700" height = "800" data ="images/Justin Le - Resume.pdf"></object>
+			<div id="Resume">
+				<h4>
+					<b>Resume</b>
+				</h4>
+			</div>
+			<object width="700" height="800" data="images/Justin Le - Resume.pdf"></object>
 			<p>
 				<a href="images/Justin Le - Resume.pdf" download="Resume - Justin Le">
 					<button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
@@ -245,14 +327,47 @@
 			function showDivs(n) {
 				var i;
 				var x = document.getElementsByClassName("mySlides");
-				if (n > x.length) { slideIndex = 1 }
-				if (n < 1) { slideIndex = x.length };
+				if (n > x.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = x.length
+				};
 				for (i = 0; i < x.length; i++) {
 					x[i].style.display = "none";
 				}
 				x[slideIndex - 1].style.display = "block";
 			}
 		</script>
+		<!-- Script for slide show -->
+		<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+				
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+				
+				function currentDiv(n) {
+				  showDivs(slideIndex = n);
+				}
+				
+				function showDivs(n) {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("demo");
+				  if (n > x.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = x.length} ;
+				  for (i = 0; i < x.length; i++) {
+					 x[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					 dots[i].className = dots[i].className.replace(" w3-black", "");
+				  }
+				  x[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " w3-black";
+				}
+				</script>
 </body>
 
 </html>

@@ -25,14 +25,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style>
-		body,
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
+		body, {font-family: 'Open Sans', serif}
+		h1,{font-family: 'Open Sans', serif}
+		h2,{font-family: 'Open Sans', serif}
+		h3,{font-family: 'Open Sans', serif}
+		h4,{font-family: 'Open Sans', serif}
+		h5,{font-family: 'Open Sans', serif}
 		h6 {
-			font-family: "Cambria", sans-serif
+			font-family: 'Open Sans', serif
 		}
 	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,9 +54,11 @@
 				<i class="fa fa-remove"></i>
 			</a>
 			<img src="images/Headshot.jpg" style="width:45%;" class="w3-round w3-border">
-			<h5><b>Justin Le | Justinhle4@gmail.com</b></h5>
+			<h5>
+				<b>Justin Le | Justinhle4@gmail.com</b>
+			</h5>
 			<br>
-			
+
 			<h4>
 				<b>PROJECT PORTFOLIO</b>
 			</h4>
@@ -94,10 +96,10 @@
 			<span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
 				<i class="fa fa-bars"></i>
 			</span>
-			<div class="w3-container w3-text-blue-gray">
-				<h2>
-					<b>Welcome to Justin Le's Project Portfolio</b>
-				</h2>
+			<div class="w3-container">
+				<h1>
+					<b>Justin Le's Project Portfolio</b>
+				</h1>
 			</div>
 			<div class="w3-container">
 				<p>This website is just to visually showcase some of the projects I have made and are proud of. I am currently attemping
@@ -105,7 +107,11 @@
 					This webpage is still being updated/created in my free time so there is still a lot to add while I learn more about
 					html/css/javascript.
 				</p>
+				<h3>
+					<b>Hardware/Firmware Projects</b>
+				</h3>
 			</div>
+
 		</header>
 
 		<!-- First Photo Grid-->
@@ -145,14 +151,14 @@
 			<!-- ADD SLIDESHOW OF PICS-->
 			<!-- Micromouse-->
 			<div class="w3-third w3-container w3-margin-bottom">
-					<div class="w3-content" style="max-width:800px">
-							<img src="images/MM2.jpg" height="300" alt="Micromouse" style="width:100%;cursor:zoom-in" class="mySlides w3-hover-opacity w3-border"
-							onclick="document.getElementById('modal02').style.display='block'">	
-							<img src="images/MM3.jpg" height="300" alt="Micromouse" style="width:100%;cursor:zoom-in" class="mySlides w3-hover-opacity w3-border"
-							onclick="document.getElementById('modal03').style.display='block'">	
-							<img src="images/Micromouse.jpg" height="300" alt="Micromouse" style="width:100%;cursor:zoom-in" class="mySlides w3-hover-opacity w3-border"
-							onclick="document.getElementById('modal04').style.display='block'">		
-						  </div>
+				<div class="w3-content" style="max-width:800px">
+					<img src="images/MM2.jpg" height="300" alt="Micromouse" style="width:100%;cursor:zoom-in" class="mySlides w3-hover-opacity w3-border"
+					    onclick="document.getElementById('modal02').style.display='block'">
+					<img src="images/MM3.jpg" height="300" alt="Micromouse" style="width:100%;cursor:zoom-in" class="mySlides w3-hover-opacity w3-border"
+					    onclick="document.getElementById('modal03').style.display='block'">
+					<img src="images/Micromouse.jpg" height="300" alt="Micromouse" style="width:100%;cursor:zoom-in" class="mySlides w3-hover-opacity w3-border"
+					    onclick="document.getElementById('modal04').style.display='block'">
+				</div>
 				<div id="modal02" class="w3-modal" onclick="this.style.display='none'">
 					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
 					<div class="w3-modal-content w3-animate-zoom">
@@ -160,17 +166,17 @@
 					</div>
 				</div>
 				<div id="modal03" class="w3-modal" onclick="this.style.display='none'">
-						<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-						<div class="w3-modal-content w3-animate-zoom">
-							<img src="images/MM3.jpg" style="width:100%">
-						</div>
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+						<img src="images/MM3.jpg" style="width:100%">
 					</div>
-					<div id="modal04" class="w3-modal" onclick="this.style.display='none'">
-							<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-							<div class="w3-modal-content w3-animate-zoom">
-								<img src="images/Micromouse.jpg" style="width:100%">
-							</div>
-						</div>
+				</div>
+				<div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+						<img src="images/Micromouse.jpg" style="width:100%">
+					</div>
+				</div>
 				<div class="w3-center">
 					<button class="w3-btn demo" onclick="currentDiv(1)">1</button>
 					<button class="w3-btn demo" onclick="currentDiv(2)">2</button>
@@ -189,7 +195,7 @@
 				</div>
 			</div>
 			<!-- Zotclicker?-->
-			<div class="w3-third w3-container">
+			<!-- <div class="w3-third w3-container">
 				<img src="images/ZotClicker.PNG" alt="ZotClicker" height="300" style="width:100%" class="w3-border">
 				<div class="w3-container w3-white">
 					<p>
@@ -209,11 +215,11 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 		<!-- Second Photo Grid-->
-		<div class="w3-row-padding">
+		<!-- <div class="w3-row-padding">
 			<div class="w3-third w3-container w3-margin-bottom">
 				<img src="http://www.edaway.com/wp-content/uploads/2012/04/logo_work_in_progress2.jpg" alt="Projector Buddy" style="width:100%"
 				    class="w3-border">
@@ -248,8 +254,8 @@
 					<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam
 						non fringilla.</p>
 				</div>
-			</div> -->
-		</div>
+			</div> 
+		</div> -->
 
 		<!-- Pagination **Not needed atm**-->
 
@@ -275,9 +281,30 @@
 		</div> -->
 
 		<div class="w3-container w3-padding-large" style="margin-bottom:32px">
+			<h3>
+				<b>Software Projects</b>
+			</h3>
 			<h4>
-				<b>About Me</b>
+				<b>Risc-V Processor</b>
 			</h4>
+			<div class="w3-text-gray"><i>System Verilog</i></div>
+			<p>This project was assigned to us in my computer organization class. The goal of this project was to implement a fully functional
+				Single Cycle Risc-V Processor then a Pipelined version for our final project that can handle data/control hazards and
+				forwarding. This project was written in SystemVerilog and synthesized using Synopsys.</p>
+			<h4>
+				<b>ZotClicker</b>
+			</h4>
+			<div class="w3-text-gray"><i>Python</i></div>
+			<p>This small coding project is a "Cookie Clicker" style UCI inspired game, done for HackUCI 2018. "A hackathon is a place
+				where the only thing limiting what you build is your own creativity - we'll provide the rest. Stay up for 36 hours
+				with the smartest people you'll ever meet and building the coolest things you have created."
+				This project was made more for fun than for the competition as my coding skills are not that developed. I will say
+					that this was an insanely entertaining project because my team and I were able to just create something unique yet
+					full of laughs the whole time.</p>
+			<hr>
+			<h3>
+				<b>About Me</b>
+			</h3>
 			<p>My name is Justin Le, I am a 3rd Year Computer Engineering student at University of California. I am always striving to
 				become a better person, whether it be acdemically or in my own personal development. When I am not doing school work
 				or working on a project I like to relax with videogames, working out, hanging out with friends, cooking and/or reading
@@ -285,9 +312,9 @@
 				Brandon Sanderson! </p>
 			<hr>
 			<div id="Resume">
-				<h4>
+				<h3>
 					<b>Resume</b>
-				</h4>
+				</h3>
 			</div>
 			<object width="700" height="800" data="images/Justin Le - Resume.pdf"></object>
 			<p>
@@ -342,33 +369,37 @@
 		</script>
 		<!-- Script for slide show -->
 		<script>
-				var slideIndex = 1;
-				showDivs(slideIndex);
-				
-				function plusDivs(n) {
-				  showDivs(slideIndex += n);
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function currentDiv(n) {
+				showDivs(slideIndex = n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("demo");
+				if (n > x.length) {
+					slideIndex = 1
 				}
-				
-				function currentDiv(n) {
-				  showDivs(slideIndex = n);
+				if (n < 1) {
+					slideIndex = x.length
+				};
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
 				}
-				
-				function showDivs(n) {
-				  var i;
-				  var x = document.getElementsByClassName("mySlides");
-				  var dots = document.getElementsByClassName("demo");
-				  if (n > x.length) {slideIndex = 1}    
-				  if (n < 1) {slideIndex = x.length} ;
-				  for (i = 0; i < x.length; i++) {
-					 x[i].style.display = "none";  
-				  }
-				  for (i = 0; i < dots.length; i++) {
-					 dots[i].className = dots[i].className.replace(" w3-black", "");
-				  }
-				  x[slideIndex-1].style.display = "block";  
-				  dots[slideIndex-1].className += " w3-black";
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" w3-black", "");
 				}
-				</script>
+				x[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " w3-black";
+			}
+		</script>
 </body>
 
 </html>

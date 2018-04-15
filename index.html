@@ -68,14 +68,14 @@
 		}
 	</style>
 	<style>
-	.alert{
-		text-align: center;
-		padding: 10px;
-		background: #79c879;
-		color: #fff;
-		margin-bottom:10px;
-		display:none;
-	}
+		.alert {
+			text-align: center;
+			padding: 10px;
+			background: #79c879;
+			color: #fff;
+			margin-bottom: 10px;
+			display: none;
+		}
 	</style>
 </head>
 
@@ -88,7 +88,7 @@
 			<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
 				<i class="fa fa-remove"></i>
 			</a>
-			<img src="images/Headshot.jpg" style="width:45%;" class="w3-round w3-border">
+			<img src="images/Headshot.jpg" style="width:60%;" class="w3-round w3-border">
 			<h5>
 				<b>Justin Le | Justinhle4@gmail.com</b>
 			</h5>
@@ -109,6 +109,8 @@
 				<i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT ME</a>
 			<a href="#Resume" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
 				<i class="fa fa-file-o fa-fw w3-margin-right"></i>RESUME</a>
+			<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+				<i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT ME</a>
 		</div>
 		<div class="w3-panel w3-large">Links:
 			<br>
@@ -175,8 +177,9 @@
 						</h4>
 					</p>
 					<p>This project was a something I made with a team of 4 for the Thales Project Arduino competition! This was my first experience
-						with a project outside of the classroom so it was extremely fun and I learned alot from it. It is a simple IOT RC car
-						that can be driven using keyboard input via Bluetooth and also has a makeshift "camera" on a pan/tilt servo that moves...
+						with a project outside of the classroom so it was extremely fun and I learned a lot from it. It is a simple IOT RC
+						car that can be driven using keyboard input via Bluetooth and also has a makeshift "camera" on a pan/tilt servo that
+						moves...
 
 					</p>
 					<a data-toggle="collapse" href="#collapse2">Read more</a>
@@ -370,11 +373,12 @@
 				fun than for the competition as my coding skills are not that developed. I will say that this was an insanely entertaining
 				project because my team and I were able to just create something unique yet full of laughs the whole time.</p>
 			<hr>
-			<h3>
-				<b>About Me</b>
-			</h3>
+
 			<!-- Images of Me -->
 			<div class="w3-row-padding w3-padding-16" id="about">
+				<h3>
+					<b>About Me</b>
+				</h3>
 				<div class="w3-col m4">
 					<img src="images/IEEEPic1.jpg" alt="Me" style="width:100%">
 				</div>
@@ -387,13 +391,13 @@
 
 			</div>
 			<p>My name is Justin Le, I am a 3rd Year Computer Engineering student at University of California. I am always striving to
-				become a better person, whether it be acdemically or in my own personal development. Every since getting to college,
+				become a better person, whether it be academically or in my own personal development. Every since getting to college,
 				I have worked several different jobs in order to pay my bills so that I could move away from home to get the best academic
-				expereince possible. While my GPA is not very high (cum GPA: 3.28), I have gone out of my way to develop my technical
+				experience possible. While my GPA is not very high (cum GPA: 3.28), I have gone out of my way to develop my technical
 				skills through my research position and side projects. When I am not doing school work or working on a project I like
-				to relax with videogames, working out, hanging out with friends, cooking and/or reading fantasy books. My favorite videogame
-				is "Stardew Valley" and the book I am currently reading is "The Way of Kings" by Brandon Sanderson! I also enjoy giving
-				back to the community which is why I join Alpha Phi Omega - ΑΦΩ - the National Co-ed Service Fraternity.</p>
+				to relax with video games, working out, hanging out with friends, cooking and/or reading fantasy books. My favorite video
+				game is "Stardew Valley" and the book I am currently reading is "The Way of Kings" by Brandon Sanderson! I also enjoy
+				giving back to the community which is why I join Alpha Phi Omega - ΑΦΩ - the National Co-ed Service Fraternity.</p>
 			<hr>
 			<div id="Resume">
 				<h3>
@@ -424,7 +428,7 @@
 						<p>
 							<i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: Justinhle4@gmail.com</p>
 						<br>
-						<div class ="alert">Your message has been sent!</div>
+						<div class="alert">Your message has been sent!</div>
 						<form id="contactForm">
 							<p>
 								<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" id="name">
@@ -453,10 +457,11 @@
 			</div>
 
 			<!-- Footer -->
-			<footer class="w3-center w3-blue-grey w3-padding-32">
+			<footer class="w3-center w3-blue-grey w3-padding-16">
 				<a href="#portfolio" class="w3-button w3-light-grey">
 					<i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 				<div class="w3-xlarge w3-section">
+
 					<i class="fa fa-github w3-hover-opacity"></i>
 					<i class="fa fa-linkedin w3-hover-opacity"></i>
 				</div>
@@ -466,7 +471,7 @@
 			<!-- End page content -->
 		</div>
 		<script>
-			//Add Google Maps
+			//script for google maps
 			function myMap() {
 				myCenter = new google.maps.LatLng(33.678408, -117.836836);
 				var mapOptions = {
@@ -555,7 +560,7 @@
 			}
 		</script>
 		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-		<script src = "contactForm.js"></script>
+		<script src="contactForm.js"></script>
 </body>
 
 </html>

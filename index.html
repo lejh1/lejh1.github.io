@@ -18,10 +18,10 @@
 	<title>Justin Le's Portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -62,11 +62,20 @@
 		}
 	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../lib/w3.css">
 	<style>
 		.mySlides {
 			display: none
 		}
+	</style>
+	<style>
+	.alert{
+		text-align: center;
+		padding: 10px;
+		background: #79c879;
+		color: #fff;
+		margin-bottom:10px;
+		display:none;
+	}
 	</style>
 </head>
 
@@ -123,7 +132,7 @@
 		<!-- Header -->
 		<header id="portfolio">
 			<a href="#">
-				<img src="images/Headshot.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity">
+				<img src="images/Headshot.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity">
 			</a>
 			<span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
 				<i class="fa fa-bars"></i>
@@ -415,18 +424,19 @@
 						<p>
 							<i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: Justinhle4@gmail.com</p>
 						<br>
-						<form action="/action_page.php" target="_blank">
+						<div class ="alert">Your message has been sent!</div>
+						<form id="contactForm">
 							<p>
-								<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+								<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" id="name">
 							</p>
 							<p>
-								<input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+								<input class="w3-input w3-border" type="email" placeholder="Email" required name="Email" id="email">
 							</p>
 							<p>
-								<input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject">
+								<input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject" id="subject">
 							</p>
 							<p>
-								<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+								<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" id="message">
 							</p>
 							<p>
 								<button class="w3-button w3-black" type="submit">
@@ -544,6 +554,8 @@
 				dots[slideIndex - 1].className += " w3-black";
 			}
 		</script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+		<script src = "contactForm.js"></script>
 </body>
 
 </html>

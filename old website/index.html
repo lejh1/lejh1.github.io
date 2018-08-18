@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115149690-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-115149690-1');
+	</script>
+
+	<title>Justin Le's Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		body,
+			{
+			font-family: 'Open Sans', serif
+		}
+
+		h1,
+			{
+			font-family: 'Open Sans', serif
+		}
+
+		h2,
+			{
+			font-family: 'Open Sans', serif
+		}
+
+		h3,
+			{
+			font-family: 'Open Sans', serif
+		}
+
+		h4,
+			{
+			font-family: 'Open Sans', serif
+		}
+
+		h5,
+			{
+			font-family: 'Open Sans', serif
+		}
+
+		h6 {
+			font-family: 'Open Sans', serif
+		}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.mySlides {
+			display: none
+		}
+	</style>
+	<style>
+		.alert {
+			text-align: center;
+			padding: 10px;
+			background: #79c879;
+			color: #fff;
+			margin-bottom: 10px;
+			display: none;
+		}
+	</style>
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+	<!-- Sidebar/menu -->
+	<nav class="w3-sidebar w3-collapse w3-blue-gray w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
+		<br>
+		<div class="w3-container">
+			<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+				<i class="fa fa-remove"></i>
+			</a>
+			<img src="images/Headshot.jpg" style="width:60%;" class="w3-round w3-border">
+			<h5>
+				<b>Justin Le | Justinhle4@gmail.com</b>
+			</h5>
+			<br>
+			<h5>
+				<b>University of California, Irvine Computer Engineering Major | 2019</b>
+			</h5>
+			<br>
+
+			<h4>
+				<b>PROJECT PORTFOLIO</b>
+			</h4>
+		</div>
+		<div class="w3-bar-block">
+			<a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+				<i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+			<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+				<i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT ME</a>
+			<a href="#Resume" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+				<i class="fa fa-file-o fa-fw w3-margin-right"></i>RESUME</a>
+			<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+				<i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT ME</a>
+		</div>
+		<div class="w3-panel w3-large">Links:
+			<br>
+			<i>
+				<a class="fa fa-linkedin w3-hover-opacity w3-blue-gray w3-margin-right" href="https://www.linkedin.com/in/justin-le-20953714b/"></a>Linkedin
+			</i>
+			<br>
+			<i>
+				<a class="fa fa-github w3-hover-opacity w3-blue-gray w3-margin-right" href="https://github.com/lejh1"></a>Github
+			</i>
+		</div>
+	</nav>
+
+	<!-- Overlay effect when opening sidebar on small screens -->
+	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+	    id="myOverlay"></div>
+
+	<!-- !PAGE CONTENT! -->
+	<div class="w3-main" style="margin-left:300px">
+
+		<!-- Header -->
+		<header id="portfolio">
+			<a href="#">
+				<img src="images/Headshot.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity">
+			</a>
+			<span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
+				<i class="fa fa-bars"></i>
+			</span>
+			<div class="w3-container">
+				<h1>
+					<b>My Project Portfolio</b>
+				</h1>
+			</div>
+			<div class="w3-container">
+				<p>This website is just to visually showcase some of the projects I have made and are proud of. I am currently attemping
+					to increase my portfolio with more fun side projects. Thank you for taking the time to check out my portfolio! NOTE:
+					This webpage is still being updated/created in my free time so there is still a lot to add while I learn more about
+					html/css/javascript.
+				</p>
+				<h3>
+					<b>Hardware/Firmware Projects</b>
+				</h3>
+			</div>
+
+		</header>
+
+		<!-- First Photo Grid-->
+		<div class="w3-row-padding">
+			<div class="w3-third w3-display-container w3-margin-bottom">
+
+				<img src="images/Scout_Car1.png" alt="Scout_Car" height="300" style="width:100%;cursor:zoom-in" class="w3-hover-opacity w3-border"
+				    onclick="document.getElementById('modal01').style.display='block'">
+				<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+						<img src="images/Scout_Car1.png" style="width:100%">
+					</div>
+				</div>
+
+				<div class="w3-container w3-white">
+					<p>
+						<h4>
+							<b>Scout Car - Project Arduino</b>
+						</h4>
+					</p>
+					<p>This project was a something I made with a team of 4 for the Thales Project Arduino competition! This was my first experience
+						with a project outside of the classroom so it was extremely fun and I learned a lot from it. It is a simple IOT RC
+						car that can be driven using keyboard input via Bluetooth and also has a makeshift "camera" on a pan/tilt servo that
+						moves...
+
+					</p>
+					<a data-toggle="collapse" href="#collapse2">Read more</a>
+					<div id="collapse2" class="panel-collapse collapse">
+						<div class="panel-body">...corresponding to your gaze data. Gaze data is picked up from a Tobi EyeX camera that uses machine vision to track
+							eye movement. My contribution to the team was the hardware/firmware aspect of the project. I created what is now our
+							final circuit design as well as picked out most of the hardware modules. I also worked with coding the firmware, in
+							this case a Arduino Uno R3.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Micromouse-->
+			<div class="w3-third w3-container w3-margin-bottom">
+				<div class="w3-content" style="max-width:800px">
+					<!-- slideshow -->
+					<img src="images/MouseRat1.PNG" alt="Micromouse" style="width:100%;cursor:zoom-in" class="mySlides w3-hover-opacity w3-border"
+					    onclick="document.getElementById('modal05').style.display='block'">
+					<img src="images/MouseRat2.PNG" alt="Micromouse" style="width:100%;cursor:zoom-in" class="mySlides w3-hover-opacity w3-border"
+					    onclick="document.getElementById('modal02').style.display='block'">
+					<img src="images/MouseRat3.PNG" alt="Micromouse" style="width:100%;cursor:zoom-in" class="mySlides w3-hover-opacity w3-border"
+					    onclick="document.getElementById('modal03').style.display='block'">
+					<img src="images/MouseRat5.PNG" alt="Micromouse" style="width:100%;cursor:zoom-in" class="mySlides w3-hover-opacity w3-border"
+					    onclick="document.getElementById('modal04').style.display='block'">
+					<img src="images/Maze.JPG" alt="Micromouse" style="width:100%;cursor:zoom-in" class="mySlides w3-hover-opacity w3-border"
+					    onclick="document.getElementById('modal06').style.display='block'">
+				</div>
+				<!-- ZOOM -->
+				<div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+						<img src="images/MouseRat1.PNG" style="width:100%">
+					</div>
+				</div>
+				<div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+						<img src="images/MouseRat2.PNG" style="width:100%">
+					</div>
+				</div>
+				<div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+						<img src="images/MouseRat3.PNG" style="width:100%">
+					</div>
+				</div>
+				<div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+						<img src="images/MouseRat4.PNG" style="width:100%">
+					</div>
+				</div>
+				<div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom">
+						<img src="images/Maze.JPG" style="width:100%">
+					</div>
+				</div>
+				<!-- BUTTONS -->
+				<div class="w3-center">
+					<button class="w3-btn demo" onclick="currentDiv(1)">1</button>
+					<button class="w3-btn demo" onclick="currentDiv(2)">2</button>
+					<button class="w3-btn demo" onclick="currentDiv(3)">3</button>
+					<button class="w3-btn demo" onclick="currentDiv(4)">4</button>
+					<button class="w3-btn demo" onclick="currentDiv(5)">5</button>
+
+				</div>
+				<div class="w3-container w3-white">
+					<p>
+						<h4>
+							<b>Micromouse - "MouseRat</b>
+						</h4>
+					</p>
+					<p>Two layer micromouse. Built with simple and affordable components. Unique design for modular systems in a smaller, more
+						compact space. This design won 3rd place at the IEEE Southern Area Region 6 Student Design Competition! A Micromouse
+						is a small AI robotic mouse that autonomously solves a 16x16 maze.
+					</p>
+				</div>
+			</div>
+			<!-- Zotclicker?-->
+			<div class="w3-third w3-container">
+				<img src="images/PB.PNG" alt="ZotClicker" style="width:100%" class="w3-border">
+				<div class="w3-container w3-white">
+					<p>
+						<h4>
+							<b>Projector Buddy </b>
+						</h4>
+					</p>
+					<p>Proof-of-concept project for a device that can externally attach to projectors and save power using various sensors,
+						internet of things, and machine learning.
+					</p>
+				</div>
+			</div>
+			<!-- Zotclicker?-->
+			<!-- <div class="w3-third w3-container">
+				<img src="images/ZotClicker.PNG" alt="ZotClicker" height="300" style="width:100%" class="w3-border">
+				<div class="w3-container w3-white">
+					<p>
+						<h3>
+							<b>ZotClicker</b>
+						</h3>
+					</p>
+					<p>This small coding project is a "Cookie Clicker" style UCI inspired game, done for HackUCI 2018. "A hackathon is a place
+						where the only thing limiting what you build is your own creativity - we'll provide the rest. Stay up for 36 hours
+						with the smartest people you'll ever meet and building the coolest things you have created."
+					</p>
+					<a data-toggle="collapse" href="#collapse1">Read more</a>
+					<div id="collapse1" class="panel-collapse collapse">
+						<div class="panel-body">This project was made more for fun than for the competition as my coding skills are not that developed. I will say
+							that this was an insanely entertaining project because my team and I were able to just create something unique yet
+							full of laughs the whole time.</p>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+
+		<!-- Second Photo Grid-->
+		<!-- <div class="w3-row-padding">
+			<div class="w3-third w3-container w3-margin-bottom">
+				<img src="http://www.edaway.com/wp-content/uploads/2012/04/logo_work_in_progress2.jpg" alt="Projector Buddy" style="width:100%"
+				    class="w3-border">
+				<div class="w3-container w3-white">
+					<p>
+						<h3>
+							<b>Projector Buddy</b>
+						</h3>
+					</p>
+					<p>Currently a project I am doing for my research that is unfinished... stay tuned for updates on it!</p>
+				</div>
+			</div>
+			<div class="w3-third w3-container w3-margin-bottom">
+				<img src="http://www.edaway.com/wp-content/uploads/2012/04/logo_work_in_progress2.jpg" alt="Coffee Buddy" style="width:100%"
+				    class="w3-border">
+				<div class="w3-container w3-white">
+					<p>
+						<h3>
+							<b>Coffee Buddy</b>
+						</h3>
+					</p>
+					<p>Currently a project I am doing for my research that is unfinished... stay tuned for updates on it!</p>
+				</div>
+			</div>
+			<!-- <div class="w3-third w3-container">
+				<img src="http://www.edaway.com/wp-content/uploads/2012/04/logo_work_in_progress2.jpg" alt="Nothing Here Yet :(" style="width:100%"
+				 class="w3-hover-opacity">
+				<div class="w3-container w3-white">
+					<p>
+						<b>Study Lights</b>
+					</p>
+					<p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam
+						non fringilla.</p>
+				</div>
+			</div> 
+		</div> -->
+
+		<!-- Pagination **Not needed atm**-->
+
+		<!--   <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+</div> -->
+		<div class="w3-container w3-padding-large" style="margin-bottom:32px">
+			<h3>
+				<b>Software Projects</b>
+			</h3>
+			<h4>
+				<b>Risc-V Processor</b>
+			</h4>
+			<div class="w3-text-gray">
+				<i>System Verilog</i>
+			</div>
+			<p>This project was assigned to us in my computer organization class. The goal of this project was to implement a fully functional
+				Single Cycle Risc-V Processor then a Pipelined version for our final project that can handle data/control hazards and
+				forwarding. This project was written in SystemVerilog and synthesized using Synopsys.</p>
+			<h4>
+				<b>ZotClicker</b>
+			</h4>
+			<div class="w3-text-gray">
+				<i>Python</i>
+			</div>
+			<p>This small coding project is a "Cookie Clicker" style UCI inspired game, done for HackUCI 2018. "A hackathon is a place
+				where the only thing limiting what you build is your own creativity - we'll provide the rest. Stay up for 36 hours with
+				the smartest people you'll ever meet and building the coolest things you have created." This project was made more for
+				fun than for the competition as my coding skills are not that developed. I will say that this was an insanely entertaining
+				project because my team and I were able to just create something unique yet full of laughs the whole time.</p>
+			<hr>
+
+			<!-- Images of Me -->
+			<div class="w3-row-padding w3-padding-16" id="about">
+				<h3>
+					<b>About Me</b>
+				</h3>
+				<div class="w3-col m4">
+					<img src="images/IEEEPic1.jpg" alt="Me" style="width:100%">
+				</div>
+				<div class="w3-col m4">
+					<img src="images/Me.jpg" alt="Me" style="width:100%">
+				</div>
+				<div class="w3-col m4">
+					<img src="images/Me1.jpg" alt="Me" style="width:100%">
+				</div>
+
+			</div>
+			<p>My name is Justin Le, I am a 3rd Year Computer Engineering student at University of California. I am always striving to
+				become a better person, whether it be academically or in my own personal development. Ever since getting to college,
+				I have worked several different jobs in order to pay my bills so that I could move away from home to get the best academic
+				experience possible. While my GPA is not very high (cum GPA: 3.28), I have gone out of my way to develop my technical
+				skills through my research position and side projects. When I am not doing school work or working on a project I like
+				to relax with video games, working out, hanging out with friends, cooking and/or reading fantasy books. My favorite video
+				game is "Stardew Valley" and the book I am currently reading is "The Way of Kings" by Brandon Sanderson! I also enjoy
+				giving back to the community which is why I join Alpha Phi Omega - ΑΦΩ - the National Co-ed Service Fraternity.</p>
+			<hr>
+			<div id="Resume">
+				<h3>
+					<b>Resume</b>
+				</h3>
+			</div>
+			<object width="700" height="800" data="images/Justin Le - Resume.pdf"></object>
+			<p>
+				<a href="images/Justin Le - Resume.pdf" download="Resume - Justin Le">
+					<button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+						<i class="fa fa-download w3-margin-right"></i>Download Resume
+					</button>
+				</a>
+			</p>
+			<hr>
+			<!-- TESTING -->
+			<!-- Contact Section -->
+			<div class="w3-container w3-white" style="padding:24px 16px" id="contact">
+				<h3 class="w3-left">
+					<b>CONTACT ME</b>
+				</h3>
+				<div class="w3-row-padding" style="margin-top:64px">
+					<div class="w3-half">
+						<p>
+							<i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Irvine CA, US</p>
+						<p>
+							<i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (909) 362-1177</p>
+						<p>
+							<i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: Justinhle4@gmail.com</p>
+						<br>
+						<div class="alert">Your message has been sent!</div>
+						<form id="contactForm">
+							<p>
+								<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name" id="name">
+							</p>
+							<p>
+								<input class="w3-input w3-border" type="email" placeholder="Email" required name="Email" id="email">
+							</p>
+							<p>
+								<input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject" id="subject">
+							</p>
+							<p>
+								<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" id="message">
+							</p>
+							<p>
+								<button class="w3-button w3-black" type="submit">
+									<i class="fa fa-paper-plane"></i> SEND MESSAGE
+								</button>
+							</p>
+						</form>
+					</div>
+					<div class="w3-half">
+						<!-- Add Google Maps -->
+						<div id="map" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<footer class="w3-center w3-blue-grey w3-padding-16">
+				<a href="#portfolio" class="w3-button w3-light-grey">
+					<i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+				<div class="w3-xlarge w3-section">
+
+					<i class="fa fa-github w3-hover-opacity"></i>
+					<i class="fa fa-linkedin w3-hover-opacity"></i>
+				</div>
+
+			</footer>
+
+			<!-- End page content -->
+		</div>
+		<script>
+			//script for google maps
+			function myMap() {
+				myCenter = new google.maps.LatLng(33.678408, -117.836836);
+				var mapOptions = {
+					center: myCenter,
+					zoom: 12,
+					scrollwheel: false,
+					draggable: false,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+				var marker = new google.maps.Marker({
+					position: myCenter,
+				});
+				marker.setMap(map);
+			}
+		</script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp6LWWgZk-Pq3IrHOURvjH8BR4WvX-hM8&callback=myMap"></script>
+		<script>
+			// Script to open and close sidebar
+			function w3_open() {
+				document.getElementById("mySidebar").style.display = "block";
+				document.getElementById("myOverlay").style.display = "block";
+			}
+
+			function w3_close() {
+				document.getElementById("mySidebar").style.display = "none";
+				document.getElementById("myOverlay").style.display = "none";
+			}
+		</script>
+		<script type="text/javascript">
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = x.length
+				};
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex - 1].style.display = "block";
+			}
+		</script>
+		<!-- Script for slide show -->
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function currentDiv(n) {
+				showDivs(slideIndex = n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("demo");
+				if (n > x.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = x.length
+				};
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" w3-black", "");
+				}
+				x[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " w3-black";
+			}
+		</script>
+		<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+		<script src="contactForm.js"></script>
+</body>
+
+</html>
